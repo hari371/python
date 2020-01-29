@@ -1,0 +1,15 @@
+x=82
+while x>9:
+    s=0
+    while x!=0:
+        y=int(x%10)
+        y=y*y
+        s=s+y
+        x=int(x/10)
+    print(s)
+    x=s
+if s==1 or s==7:
+    print("happy no.")
+else:
+    print("not happy no.")
+    
