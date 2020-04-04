@@ -1,0 +1,7 @@
+mydict = {'StuName': 'Ajeet', 'StuAge': 30, 'StuCity': 'Agra'}
+print("Student Age before update is:", mydict['StuAge'])
+print("Student City before update is:", mydict['StuCity'])
+mydict['StuAge'] = 31
+mydict['StuCity'] = 'Noida'
+print("Student Age after update is:", mydict['StuAge'])
+print("Student City after update is:", mydict['StuCity'])

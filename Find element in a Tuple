@@ -1,0 +1,18 @@
+numberList = []
+count=0
+n = int(input("Enter the tuple size : "))
+
+for i in range(0, n):
+    item = int(input())
+    numberList.append(item)
+my_tuple = tuple(numberList)
+print("User Tuple is ", my_tuple)
+
+element = int(input("Enter element to search: "))
+for i in range(0,n):
+    if(element == my_tuple[i]):
+        print(element,"is found at position",i+1)
+        count=count+1
+        break
+if(count==0):
+    print(element,"is not found")

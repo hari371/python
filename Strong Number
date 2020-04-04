@@ -1,0 +1,15 @@
+a=int(input("Enter a number: "))
+temp=a
+add=0
+while(temp):
+    fact=1
+    digit=temp%10
+    temp=temp//10
+    while(digit):
+        fact=fact*digit
+        digit=digit-1
+    add=add+fact
+if(add==a):
+    print(a,"is Strong number.")
+else:
+    print(a,"is not a Strong number.")

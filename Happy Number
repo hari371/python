@@ -1,0 +1,17 @@
+a=int(input("Enter a number:"))
+temp=a
+num=0
+while(True):
+    while(temp):
+        digit=temp%10
+        temp=temp//10
+        num=num+(digit**2)
+    if(num==1):
+        print(a,"is Happy number")
+        break
+    elif(num==4):
+        print(a,"is Unhappy number")
+        break
+    else:
+        temp=num
+        num=0

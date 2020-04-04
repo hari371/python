@@ -1,0 +1,18 @@
+def length():
+    n=int(input())
+    a = []
+    l = []
+    
+    for i in range(n):
+        ai = input()
+        a.append(ai)
+    
+    m=len(a[0])
+    for word in a:
+        if m<len(word):
+            m=len(word)
+    
+    for word in a:
+        if m==len(word):
+            print(word)
+    

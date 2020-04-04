@@ -1,0 +1,10 @@
+word=input("Enter a word: ")
+alphabet=input("Enter a alphabet: ")
+count=0
+for i in range(0,len(word)):
+    if(alphabet==word[i]):
+        count=count+1
+if(count==0):
+    print(alphabet,"is not present.")
+else:
+    print(alphabet,"is present",count,"time.")

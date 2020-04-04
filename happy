@@ -1,0 +1,15 @@
+def happy(num):
+    s=0
+    while num>0:
+        r = num%10
+        r = r*r
+        s = s+r
+        num = int(num/10)
+    if s>9:
+        happy(s)
+    elif s==1 or s==7:
+        print("happy")
+    else:
+        print("not happy")
+    
+happy(19)

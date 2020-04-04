@@ -1,0 +1,15 @@
+a=int(input("Enter a number: "))
+temp1=temp2=a
+power=add=0
+while(temp1):
+    temp1%10
+    power+=1
+    temp1=temp1//10
+while(temp2):
+    digit=temp2%10
+    add=add+(digit**power)
+    temp2=temp2//10
+if(add==a):
+    print(a,"is Armstrong number.")
+else:
+    print(a,"is not Armstrong number.")
